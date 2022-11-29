@@ -1,0 +1,24 @@
+:root{
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+}
+
+*{
+    transition: 0.3s;
+ 
+}
+
+*::selection{
+    transition: 0.3s;
+  background: var(--main);
+  color: var(--white);
+
+}
+
+h1,h2{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+

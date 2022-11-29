@@ -1,0 +1,75 @@
+:root{
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+}
+.btn{
+    width: 300px;
+    border: 2px solid var(--main);
+    color: var(--main) !important;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+.btn:hover{
+    color: var(--white);
+
+
+}
+.btn::after{
+    content: "";
+    background: var(--main);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+transition: 0.3s;
+}
+.btn:hover::after{
+    width: 100%;
+}
+.header{
+    position: relative;
+}
+
+.header img{
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header.Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--black);
+    opacity: 0.4;
+}
+
+.header .content{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: var(--white) !important;
+    background: var(--black);
+    padding: 20px;
+}
+
+.header .content{
+    font-size: 50px;
+
+}
+
+.header.btn{
+    margin-top: 30px;
+    
+}

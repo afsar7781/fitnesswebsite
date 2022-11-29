@@ -1,0 +1,19 @@
+:root{
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+}
+
+.details{
+    margin-bottom: 200px;
+}
+
+.details .col-sm-5 h6{
+    font-size: 70px;
+    font-weight: 600px;
+    margin: 20px auto;
+}
+
+.details .col-sm-5 p{
+    margin: 35px auto;
+}

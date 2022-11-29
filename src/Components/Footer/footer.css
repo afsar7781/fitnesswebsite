@@ -1,0 +1,60 @@
+:root{
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+}
+
+
+
+
+footer{
+    background: var(--black);
+    padding: 20px;
+  
+}
+.footer .container{
+    color: var(--white) !important;
+    border-bottom: 2px solid var(--white);
+
+}
+
+footer .container h6{
+font-weight: 600;
+font-size: 40px;
+margin: 20px auto;
+color: var(--white);
+}
+
+footer .container i{
+    display: block;
+    margin: 10px auto;
+    color: white;
+
+}
+
+footer .container a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    padding-left: 20px;
+}
+
+footer .container i a:hover{
+    color: var(--main) !important;
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+.footer .CustomFooter{
+    
+    text-align: center;
+    padding: 20px;
+}
+.footer .CustomFooter a{
+    color: var(--white);
+    text-decoration: none !important;
+    font-size: 20px;
+}
+
+
+
+

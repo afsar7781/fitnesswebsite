@@ -1,0 +1,63 @@
+:root{
+    --main: #f01027;
+    --black:#000;
+    --white: #fff;
+}
+
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--main);
+}
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+
+
+.teams{
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.teams .col-sm-4 {
+overflow: hidden;
+position: relative;
+}
+
+.teams img{
+    height: 550px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.teams img:hover{
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+
+}
+
+.teams .content {
+    position: absolute;
+top: 99%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: var(--white) !important;
+width: 95%;
+background:var(--black);
+text-align: center;
+padding: 20px;
+opacity: 0;
+}
+.teams .col-sm-4:hover .content{
+opacity: 1;
+}
+
+.teams .content h6{
+font-size: 40px;
+font-weight: 600;
+}
